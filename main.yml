@@ -1,0 +1,10 @@
+--- #test config to install iis in windows server 2019
+- hosts: windows2019
+  tasks:
+    - name: installing iis in win2019 server
+      win_feature:
+        name: "web-server"
+        state: present
+        restart: yes
+        include_sub_features: yes
+        include_management_tools: yes 

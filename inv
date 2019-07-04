@@ -1,0 +1,7 @@
+[windows2019]
+3.89.27.187
+[windows2019:vars]
+ansible_user=Administrator
+ansible_password=Yrk.wuuU-5ZGNJy6LCgyJ(lq8YNgSn2m
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
