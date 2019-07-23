@@ -11,5 +11,5 @@
     - name: create physical path for iis website's source
       win_file: 
         path: c:\inetpub\wwwroot\csharpguitar 
-        state=directory    
+        state: directory    
     
