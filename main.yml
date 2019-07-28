@@ -17,6 +17,5 @@
         name: "testansible"
         state: started
         port: 81
-        application_pool: "testansible"
         physical_path: c:\inetpub\wwwroot\testansible
     
