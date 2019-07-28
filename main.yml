@@ -1,5 +1,5 @@
 --- 
-- hosts: all
+- hosts: 155.138.217.199
   tasks:
     - name: install iis
       win_feature:
@@ -10,6 +10,13 @@
         include_management_tools: yes
     - name: create physical path for iis website's source
       win_file: 
-        path: c:\inetpub\wwwroot\csharpguitar 
-        state: directory    
+        path: c:\inetpub\wwwroot\testansible 
+        state: directory
+    - name: create new website
+      win_iis_website:
+        name: "testansible"
+        state: started
+        port: 81
+        application_pool: "testansible"
+        physical_path: c:\inetpub\wwwroot\testansible
     
